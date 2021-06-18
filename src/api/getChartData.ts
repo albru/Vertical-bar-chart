@@ -2,9 +2,9 @@ import { ChartData } from "../types";
 import { CHART_MOCK_DATA, ANOTHER_CHART_MOCK_DATA } from "../consts";
 
 export const getChartData = () =>
-  new Promise<ChartData>((resolve) => {
+  new Promise<ChartData>((resolve, reject) => {
     setTimeout(() => {
-      resolve(CHART_MOCK_DATA);
+      reject(CHART_MOCK_DATA);
     }, 1200);
   });
 
