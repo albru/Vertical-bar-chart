@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import Chart from "./components/chart";
 import { ChartDataState } from "./types";
-import { getAnotherChartData, getChartData } from "./api";
+import { chartService } from "./services";
 
 import "./App.css";
 
@@ -13,18 +13,7 @@ function App() {
   });
 
   useEffect(() => {
-    (async () => {
-      try {
-        const [chartData, anotherChartData] = await Promise.all([
-          getChartData(),
-          getAnotherChartData(),
-        ]);
-
-        setChartData({ chartData, anotherChartData });
-      } catch (error) {
-        console.log(error);
-      }
-    })();
+    chartService.getData().then((data) => data && setChartData(data));
   }, []);
 
   return (
