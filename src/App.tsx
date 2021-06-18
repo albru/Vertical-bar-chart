@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Chart from "./components/chart";
-import { ChartDataState } from "./types/chartData";
 
+import Chart from "./components/chart";
+import { ChartDataState } from "./types";
 import { getAnotherChartData, getChartData } from "./api";
 
 import "./App.css";

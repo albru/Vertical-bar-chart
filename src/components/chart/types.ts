@@ -1,5 +1,7 @@
-import { ChartData } from "../../types/chartData";
+import { ChartData, Chart } from "../../types";
 
 export interface Props {
-    data: ChartData
-};
+  data: ChartData;
+}
+
+export type ChartElementStyles = Record<keyof Chart, string>;

@@ -1,5 +1,5 @@
-import { ChartData } from "../../../types/chartData";
-import { ChartElementStyles } from "../chartElement/types";
+import { ChartData } from "../../../types";
+import { ChartElementStyles } from "../types";
 
 export const transformToStyles = (data: ChartData) =>
   data.reduce<ChartElementStyles[]>((acc, { height, width, ...rest }) => {
