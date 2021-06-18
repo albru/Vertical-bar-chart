@@ -1,6 +1,5 @@
-import { ANOTHER_CHART_MOCK_DATA } from "./../consts/chartMock";
 import { ChartData } from "../types/chartData";
-import { CHART_MOCK_DATA } from "../consts/chartMock";
+import { CHART_MOCK_DATA, ANOTHER_CHART_MOCK_DATA } from "../consts/chartMock";
 
 export const getChartData = () =>
   new Promise<ChartData>((resolve) => {
