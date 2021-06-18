@@ -1,5 +1,5 @@
 import ChartElement from "./chartElement";
-import { transformToStyles } from "./chartElement/utils/transformToStyles";
+import { transformToStyles } from "./utils/transformToStyles";
 
 import { Props } from "./types";
 
