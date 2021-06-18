@@ -1,7 +1,7 @@
 import { Props } from "./types";
 
-const ChartElement = ({ color, ...rest }: Props) => {
-  return <div style={{ backgroundColor: color, ...rest }}></div>;
-};
+const ChartElement = ({ color, ...rest }: Props) => (
+  <div style={{ backgroundColor: color, ...rest }}/>
+);
 
 export default ChartElement;
